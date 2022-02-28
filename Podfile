@@ -10,5 +10,6 @@ target 'DVNCI_Example' do
   pod 'PinLayout'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Alamofire'
 
 end
