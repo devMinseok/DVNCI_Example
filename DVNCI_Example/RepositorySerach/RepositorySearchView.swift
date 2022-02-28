@@ -14,12 +14,19 @@ import PinLayout
 // MARK: - RepositorySearchViewProtocol
 protocol RepositorySearchViewProtocol {
     var controller: RepositorySearchControllerProtocol? { get set }
+    
+    func reloadTableView()
 }
 
 final class RepositorySearchView: UIView {
 
 // MARK: - Properties
-    weak var controller: RepositorySearchControllerProtocol?
+    weak var controller: RepositorySearchControllerProtocol? {
+        didSet {
+            tableView.dataSource = controller?.dataSource as? UITableViewDataSource
+            tableView.delegate = self
+        }
+    }
     
     fileprivate let rootFlexContainer = UIView()
     
@@ -31,6 +38,7 @@ final class RepositorySearchView: UIView {
     
     var searchButton: UIButton = {
         let button = UIButton()
+        button.addTarget(self, action: #selector(searchButtonAction), for: .touchUpInside)
         button.setTitle("Search", for: .normal)
         button.setTitleColor(.blue, for: .normal)
         return button
@@ -77,7 +85,20 @@ final class RepositorySearchView: UIView {
         rootFlexContainer.pin.all(pin.safeArea)
         rootFlexContainer.flex.layout()
     }
+    
+    @objc func searchButtonAction() {
+        controller?.searchRepository(with: searchField.text)
+    }
 }
 
 // MARK: - RepositorySearchViewProtocol Methods
-extension RepositorySearchView: RepositorySearchViewProtocol {}
+extension RepositorySearchView: RepositorySearchViewProtocol {
+    func reloadTableView() {
+        tableView.reloadData()
+    }
+}
+
+
+extension RepositorySearchView: UITableViewDelegate {
+    
+}

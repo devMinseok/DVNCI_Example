@@ -14,6 +14,10 @@ protocol RepositorySearchControllerProtocol: AnyObject {
     var interactor: RepositorySearchInteractorProtocol? { get set }
     var navigator: RepositorySearchNavigatorProtocol? { get set }
     var dataSource: RepositorySearchDataSourceProtocol? { get set }
+    
+    func searchRepository(with text: String?)
+    func setDataSource(with data: Data?)
+    func reloadTableView()
 }
 
 final class RepositorySearchController: UIViewController {
@@ -31,4 +35,16 @@ final class RepositorySearchController: UIViewController {
 }
 
 // MARK: - RepositorySearchControllerProtocol Methods
-extension RepositorySearchController: RepositorySearchControllerProtocol {}
+extension RepositorySearchController: RepositorySearchControllerProtocol {
+    func reloadTableView() {
+        view_?.reloadTableView()
+    }
+    
+    func searchRepository(with text: String?) {
+        interactor?.searchGithubRepository(from: text)
+    }
+    
+    func setDataSource(with data: Data?) {
+        dataSource?.setItems(from: data)
+    }
+}
