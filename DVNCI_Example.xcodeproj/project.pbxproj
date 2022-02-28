@@ -12,6 +12,11 @@
 		F20261D427CCAD2D004216FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261D327CCAD2D004216FE /* SceneDelegate.swift */; };
 		F20261DB27CCAD2E004216FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20261DA27CCAD2E004216FE /* Assets.xcassets */; };
 		F20261DE27CCAD2E004216FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20261DC27CCAD2E004216FE /* LaunchScreen.storyboard */; };
+		F20261EC27CCB228004216FE /* RepositorySearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261E727CCB228004216FE /* RepositorySearchNavigator.swift */; };
+		F20261ED27CCB228004216FE /* RepositorySearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261E827CCB228004216FE /* RepositorySearchDataSource.swift */; };
+		F20261EE27CCB228004216FE /* RepositorySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261E927CCB228004216FE /* RepositorySearchController.swift */; };
+		F20261EF27CCB228004216FE /* RepositorySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261EA27CCB228004216FE /* RepositorySearchInteractor.swift */; };
+		F20261F027CCB228004216FE /* RepositorySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261EB27CCB228004216FE /* RepositorySearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F20261DA27CCAD2E004216FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20261DD27CCAD2E004216FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F20261DF27CCAD2E004216FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20261E727CCB228004216FE /* RepositorySearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchNavigator.swift; sourceTree = "<group>"; };
+		F20261E827CCB228004216FE /* RepositorySearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchDataSource.swift; sourceTree = "<group>"; };
+		F20261E927CCB228004216FE /* RepositorySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchController.swift; sourceTree = "<group>"; };
+		F20261EA27CCB228004216FE /* RepositorySearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchInteractor.swift; sourceTree = "<group>"; };
+		F20261EB27CCB228004216FE /* RepositorySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +86,26 @@
 		F20261D027CCAD2D004216FE /* DVNCI_Example */ = {
 			isa = PBXGroup;
 			children = (
+				F20261DF27CCAD2E004216FE /* Info.plist */,
 				F20261D127CCAD2D004216FE /* AppDelegate.swift */,
 				F20261D327CCAD2D004216FE /* SceneDelegate.swift */,
+				F20261E527CCB0F2004216FE /* RepositorySerach */,
 				F20261DA27CCAD2E004216FE /* Assets.xcassets */,
 				F20261DC27CCAD2E004216FE /* LaunchScreen.storyboard */,
-				F20261DF27CCAD2E004216FE /* Info.plist */,
 			);
 			path = DVNCI_Example;
+			sourceTree = "<group>";
+		};
+		F20261E527CCB0F2004216FE /* RepositorySerach */ = {
+			isa = PBXGroup;
+			children = (
+				F20261E727CCB228004216FE /* RepositorySearchNavigator.swift */,
+				F20261E827CCB228004216FE /* RepositorySearchDataSource.swift */,
+				F20261E927CCB228004216FE /* RepositorySearchController.swift */,
+				F20261EA27CCB228004216FE /* RepositorySearchInteractor.swift */,
+				F20261EB27CCB228004216FE /* RepositorySearchView.swift */,
+			);
+			path = RepositorySerach;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20261EE27CCB228004216FE /* RepositorySearchController.swift in Sources */,
+				F20261ED27CCB228004216FE /* RepositorySearchDataSource.swift in Sources */,
+				F20261F027CCB228004216FE /* RepositorySearchView.swift in Sources */,
+				F20261EF27CCB228004216FE /* RepositorySearchInteractor.swift in Sources */,
 				F20261D227CCAD2D004216FE /* AppDelegate.swift in Sources */,
 				F20261D427CCAD2D004216FE /* SceneDelegate.swift in Sources */,
+				F20261EC27CCB228004216FE /* RepositorySearchNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
