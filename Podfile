@@ -8,8 +8,6 @@ target 'DVNCI_Example' do
   # Pods for DVNCI_Example
   pod 'FlexLayout'
   pod 'PinLayout'
-  pod 'RxSwift'
-  pod 'RxCocoa'
   pod 'Alamofire'
 
 end
