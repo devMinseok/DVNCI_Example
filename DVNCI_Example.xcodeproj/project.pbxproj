@@ -17,6 +17,8 @@
 		F20261EE27CCB228004216FE /* RepositorySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261E927CCB228004216FE /* RepositorySearchController.swift */; };
 		F20261EF27CCB228004216FE /* RepositorySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261EA27CCB228004216FE /* RepositorySearchInteractor.swift */; };
 		F20261F027CCB228004216FE /* RepositorySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261EB27CCB228004216FE /* RepositorySearchView.swift */; };
+		F20261F327CCCE0C004216FE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261F227CCCE0C004216FE /* Repository.swift */; };
+		F20261F527CCDF54004216FE /* GithubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261F427CCDF54004216FE /* GithubResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		F20261E927CCB228004216FE /* RepositorySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchController.swift; sourceTree = "<group>"; };
 		F20261EA27CCB228004216FE /* RepositorySearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchInteractor.swift; sourceTree = "<group>"; };
 		F20261EB27CCB228004216FE /* RepositorySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchView.swift; sourceTree = "<group>"; };
+		F20261F227CCCE0C004216FE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F20261F427CCDF54004216FE /* GithubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				F20261DF27CCAD2E004216FE /* Info.plist */,
 				F20261D127CCAD2D004216FE /* AppDelegate.swift */,
 				F20261D327CCAD2D004216FE /* SceneDelegate.swift */,
+				F20261F127CCCDEB004216FE /* Model */,
 				F20261E527CCB0F2004216FE /* RepositorySerach */,
 				F20261DA27CCAD2E004216FE /* Assets.xcassets */,
 				F20261DC27CCAD2E004216FE /* LaunchScreen.storyboard */,
@@ -106,6 +111,15 @@
 				F20261EB27CCB228004216FE /* RepositorySearchView.swift */,
 			);
 			path = RepositorySerach;
+			sourceTree = "<group>";
+		};
+		F20261F127CCCDEB004216FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F20261F427CCDF54004216FE /* GithubResponse.swift */,
+				F20261F227CCCE0C004216FE /* Repository.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +239,8 @@
 				F20261EE27CCB228004216FE /* RepositorySearchController.swift in Sources */,
 				F20261ED27CCB228004216FE /* RepositorySearchDataSource.swift in Sources */,
 				F20261F027CCB228004216FE /* RepositorySearchView.swift in Sources */,
+				F20261F327CCCE0C004216FE /* Repository.swift in Sources */,
+				F20261F527CCDF54004216FE /* GithubResponse.swift in Sources */,
 				F20261EF27CCB228004216FE /* RepositorySearchInteractor.swift in Sources */,
 				F20261D227CCAD2D004216FE /* AppDelegate.swift in Sources */,
 				F20261D427CCAD2D004216FE /* SceneDelegate.swift in Sources */,
