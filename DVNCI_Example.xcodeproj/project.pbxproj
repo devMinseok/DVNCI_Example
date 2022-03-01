@@ -19,6 +19,7 @@
 		F20261F027CCB228004216FE /* RepositorySearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261EB27CCB228004216FE /* RepositorySearchView.swift */; };
 		F20261F327CCCE0C004216FE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261F227CCCE0C004216FE /* Repository.swift */; };
 		F20261F527CCDF54004216FE /* GithubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20261F427CCDF54004216FE /* GithubResponse.swift */; };
+		F2ADB34027CE63B700E25F8D /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADB33F27CE63B700E25F8D /* RepositoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F20261EB27CCB228004216FE /* RepositorySearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySearchView.swift; sourceTree = "<group>"; };
 		F20261F227CCCE0C004216FE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		F20261F427CCDF54004216FE /* GithubResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubResponse.swift; sourceTree = "<group>"; };
+		F2ADB33F27CE63B700E25F8D /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				F20261D127CCAD2D004216FE /* AppDelegate.swift */,
 				F20261D327CCAD2D004216FE /* SceneDelegate.swift */,
 				F20261F127CCCDEB004216FE /* Model */,
+				F2ADB33C27CE638400E25F8D /* Cell */,
 				F20261E527CCB0F2004216FE /* RepositorySerach */,
 				F20261DA27CCAD2E004216FE /* Assets.xcassets */,
 				F20261DC27CCAD2E004216FE /* LaunchScreen.storyboard */,
@@ -120,6 +123,14 @@
 				F20261F227CCCE0C004216FE /* Repository.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F2ADB33C27CE638400E25F8D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2ADB33F27CE63B700E25F8D /* RepositoryTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 				F20261EE27CCB228004216FE /* RepositorySearchController.swift in Sources */,
 				F20261ED27CCB228004216FE /* RepositorySearchDataSource.swift in Sources */,
 				F20261F027CCB228004216FE /* RepositorySearchView.swift in Sources */,
+				F2ADB34027CE63B700E25F8D /* RepositoryTableViewCell.swift in Sources */,
 				F20261F327CCCE0C004216FE /* Repository.swift in Sources */,
 				F20261F527CCDF54004216FE /* GithubResponse.swift in Sources */,
 				F20261EF27CCB228004216FE /* RepositorySearchInteractor.swift in Sources */,

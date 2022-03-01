@@ -40,13 +40,17 @@ final class RepositorySearchView: UIView {
         let button = UIButton()
         button.addTarget(self, action: #selector(searchButtonAction), for: .touchUpInside)
         button.setTitle("Search", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setTitleColor(.systemBlue, for: .normal)
         return button
     }()
     
     var tableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .lightGray
+        tableView.register(
+            RepositoryTableViewCell.self,
+            forCellReuseIdentifier: "RepositoryTableViewCell"
+        )
         return tableView
     }()
     
@@ -86,7 +90,7 @@ final class RepositorySearchView: UIView {
         rootFlexContainer.flex.layout()
     }
     
-    @objc func searchButtonAction() {
+    @objc private func searchButtonAction() {
         controller?.searchRepository(with: searchField.text)
     }
 }
