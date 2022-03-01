@@ -32,6 +32,8 @@ final class RepositoryTableViewCell: UITableViewCell {
         let label = UILabel()
         label.numberOfLines = 1
         label.font = .systemFont(ofSize: 12)
+        label.textColor = .darkGray
+        label.textAlignment = .right
         return label
     }()
     
@@ -44,10 +46,11 @@ final class RepositoryTableViewCell: UITableViewCell {
         rootFlexContainer.flex
             .direction(.row)
             .paddingHorizontal(10)
+            .justifyContent(.spaceBetween)
             .define { flex in
                 flex.addItem()
-                    .grow(8)
                     .direction(.column)
+                    .maxWidth(60%)
                     .justifyContent(.center)
                     .define { flex in
                         flex.addItem(titleLabel)
@@ -55,7 +58,7 @@ final class RepositoryTableViewCell: UITableViewCell {
                     }
 
                 flex.addItem(languageLabel)
-                    .grow(1)
+                    .width(100)
             }
     }
     
